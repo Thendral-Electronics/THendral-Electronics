@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             // Replace with actual WhatsApp number (remove spaces and add country code)
-            const phoneNumber = '91XXXXXXXXXX'; // Replace XXXXXXXXXX with actual number
+            const phoneNumber = "919876543210"; // Replace XXXXXXXXXX with actual number
             const message = encodeURIComponent('Hi, I need home appliance service. Please help me.');
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, 'Hi');
         });
     });
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             bookingForm.reset();
             
             // Optionally, redirect to WhatsApp
-            const phoneNumber = '91XXXXXXXXXX'; // Replace with actual number
+            const phoneNumber = "919876543210"; // Replace with actual number
             const whatsappMessage = encodeURIComponent(
                 `New Service Booking:\nName: ${name}\nMobile: ${mobile}\nAppliance: ${appliance}\nProblem: ${problem}`
             );
